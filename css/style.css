@@ -307,6 +307,9 @@ a:hover { color: var(--gold); }
 .site-footer img {
   mix-blend-mode: screen;
 }
+.nav-brand .logo-mark img {
+  mix-blend-mode: multiply;
+}
 .site-footer a { color: var(--gold); }
 .site-footer p { margin-bottom: 0.4rem; color: var(--gold-light); }
 .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.75rem; }

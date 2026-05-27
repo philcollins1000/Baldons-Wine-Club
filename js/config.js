@@ -10,7 +10,7 @@ const BWC_CONFIG = {
   // 2. File → Share → Publish to web → choose "Entire Document" → CSV → Publish
   // 3. Copy the Sheet ID from the URL (the long string between /d/ and /edit)
   // 4. Paste it below
-  SHEET_ID: 'YOUR_GOOGLE_SHEET_ID_HERE',
+  SHEET_ID: '1VjKVCinx14p35cKKv0jtl6iHQCeDD_OuEoVR-_U4UJU',
 
   // ── Members Area Password ──────────────────
   // Change this to whatever password you want members to use.

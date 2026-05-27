@@ -305,10 +305,11 @@ a:hover { color: var(--gold); }
   font-family: 'Arial', sans-serif; font-size: 0.85rem;
 }
 .site-footer img {
-  mix-blend-mode: screen;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
 }
 .nav-brand .logo-mark img {
-  mix-blend-mode: multiply;
+  filter: brightness(0) invert(1);
 }
 .site-footer a { color: var(--gold); }
 .site-footer p { margin-bottom: 0.4rem; color: var(--gold-light); }

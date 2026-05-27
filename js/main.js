@@ -132,6 +132,7 @@ function renderEvents(containerId, events) {
       <div class="event-info">
         <h3>${ev.Title}</h3>
         <p>📍 ${ev.Venue} &nbsp;·&nbsp; ${ev.Description}</p>
+        ${ev.Price ? `<p style="margin:0.3rem 0 0;font-family:'Arial',sans-serif;font-size:0.88rem;font-weight:bold;color:var(--burgundy);">🎟 ${ev.Price}</p>` : ''}
       </div>
       <span class="event-tag ${tagClass}">${ev.Type}</span>
     </div>`;

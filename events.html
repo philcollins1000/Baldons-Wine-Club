@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Baldons Wine Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-mark"><img src="images/logo.png" alt="BWC" style="width:68px;height:68px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='🍷'"></div>
+      <div class="brand-text"><strong>Baldons Wine Club</strong><span>In Vino Veritas</span></div>
+    </a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="committee.html">Committee</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="wines.html">Wine Library</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li class="members-link"><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1>Upcoming Events</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. All events held at The Seven Stars or the Village Hall unless noted.</p>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- Filter tabs -->
+    <div style="display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap;">
+      <button class="btn btn-burgundy filter-btn active" data-filter="all">All Events</button>
+      <button class="btn btn-outline filter-btn" style="color:var(--burgundy);border-color:var(--burgundy);" data-filter="Tasting">Tastings</button>
+      <button class="btn btn-outline filter-btn" style="color:var(--green);border-color:var(--green);" data-filter="Social">Social</button>
+      <button class="btn btn-outline filter-btn" style="color:var(--gold);border-color:var(--gold);" data-filter="Trip">Trips</button>
+    </div>
+
+    <div class="events-list" id="events-all"></div>
+
+    <!-- Sheets setup notice (hidden once sheet is configured) -->
+    <div id="sheets-notice" style="background:var(--cream-dark);border:1px solid var(--border);border-radius:8px;padding:1.5rem;margin-top:2rem;font-family:Arial,sans-serif;font-size:0.9rem;color:var(--text-light);display:none;">
+      <strong>💡 Connect your Google Sheet</strong> — update <code>SHEET_ID</code> in <code>js/config.js</code> to pull live events automatically. See README.md for instructions.
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW EVENTS WORK ── -->
+<section class="section bg-dark">
+  <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <h2>What to Expect</h2>
+      <div class="divider" style="background:var(--gold);"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+        <span style="font-size:1.5rem;">🍷</span>
+        <div><strong style="color:var(--gold);">Tasting Evenings</strong><p style="margin:0.25rem 0 0;font-size:0.95rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p></div>
+      </div>
+      <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+        <span style="font-size:1.5rem;">🎉</span>
+        <div><strong style="color:var(--gold);">Social Events</strong><p style="margin:0.25rem 0 0;font-size:0.95rem;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></div>
+      </div>
+      <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+        <span style="font-size:1.5rem;">✈️</span>
+        <div><strong style="color:var(--gold);">Trips & Visits</strong><p style="margin:0.25rem 0 0;font-size:0.95rem;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Baldons Wine Club" style="height:50px;margin-bottom:0.75rem;opacity:0.85;" onerror="this.style.display='none'">
+  <p><strong>Baldons Wine Club</strong></p>
+  <p>The Seven Stars, Marsh Baldon · Oxfordshire</p>
+  <p><a href="mailto:wine@baldons.co.uk">wine@baldons.co.uk</a></p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="committee.html">Committee</a>
+    <a href="events.html">Events</a><a href="wines.html">Wine Library</a>
+    <a href="join.html">Join Us</a><a href="members.html">Members</a>
+  </div>
+  <p style="margin-top:1.25rem;font-size:0.78rem;opacity:0.6;">© 2026 Baldons Wine Club · In Vino Veritas</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  let allEvents = await loadSheet('Events') || SAMPLE_EVENTS;
+  renderEvents('events-all', allEvents);
+  if (!BWC_CONFIG.SHEET_ID || BWC_CONFIG.SHEET_ID === 'YOUR_GOOGLE_SHEET_ID_HERE') {
+    document.getElementById('sheets-notice').style.display = 'block';
+  }
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      const filtered = f === 'all' ? allEvents : allEvents.filter(e => e.Type === f);
+      renderEvents('events-all', filtered);
+    });
+  });
+});
+</script>
+</body>
+</html>

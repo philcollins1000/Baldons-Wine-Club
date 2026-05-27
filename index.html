@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baldons Wine Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-mark"><img src="images/logo.png" alt="BWC" style="width:68px;height:68px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='🍷'"></div>
+      <div class="brand-text">
+        <strong>Baldons Wine Club</strong>
+        <span>In Vino Veritas</span>
+      </div>
+    </a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="committee.html">Committee</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="wines.html">Wine Library</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li class="members-link"><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Est. 2018 · Toot Baldon & Marsh Baldon</p>
+    <h1>Baldons Wine Club</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <div class="hero-btns">
+      <a href="events.html" class="btn btn-primary">Upcoming Events</a>
+      <a href="join.html" class="btn btn-outline">Join the Club</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── INTRO ── -->
+<section class="section">
+  <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <p class="eyebrow" style="font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">About the Club</p>
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="join.html" class="btn btn-burgundy" style="margin-top:0.5rem;">Find Out More</a>
+    </div>
+    <div style="background:var(--cream-dark);border-radius:12px;padding:2.5rem;text-align:center;border:1px solid var(--border);">
+      <div style="font-size:4rem;margin-bottom:1rem;">🍷</div>
+      <h3 style="color:var(--burgundy);margin-bottom:0.75rem;">Membership at a Glance</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.25rem;">
+        <div style="background:var(--white);border-radius:8px;padding:1rem;box-shadow:0 2px 8px var(--shadow);">
+          <div style="font-size:1.8rem;font-weight:bold;color:var(--burgundy);">12+</div>
+          <div style="font-size:0.8rem;color:var(--text-light);font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:0.06em;">Tastings per year</div>
+        </div>
+        <div style="background:var(--white);border-radius:8px;padding:1rem;box-shadow:0 2px 8px var(--shadow);">
+          <div style="font-size:1.8rem;font-weight:bold;color:var(--burgundy);">60+</div>
+          <div style="font-size:0.8rem;color:var(--text-light);font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:0.06em;">Wines tasted</div>
+        </div>
+        <div style="background:var(--white);border-radius:8px;padding:1rem;box-shadow:0 2px 8px var(--shadow);">
+          <div style="font-size:1.8rem;font-weight:bold;color:var(--burgundy);">40+</div>
+          <div style="font-size:0.8rem;color:var(--text-light);font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:0.06em;">Members</div>
+        </div>
+        <div style="background:var(--white);border-radius:8px;padding:1rem;box-shadow:0 2px 8px var(--shadow);">
+          <div style="font-size:1.8rem;font-weight:bold;color:var(--burgundy);">6</div>
+          <div style="font-size:0.8rem;color:var(--text-light);font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:0.06em;">Villages</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEXT EVENTS ── -->
+<section class="section bg-cream-dark">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Upcoming Events</h2>
+      <div class="divider center"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="events-list" id="events-home"></div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="events.html" class="btn btn-burgundy">View All Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURED WINES ── -->
+<section class="section bg-dark">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Recently Recommended</h2>
+      <div class="divider center" style="background:var(--gold);"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    </div>
+    <div class="card-grid" id="wines-home"></div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="wines.html" class="btn btn-primary">Browse the Wine Library</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA JOIN ── -->
+<section class="section" style="text-align:center;">
+  <div class="section-inner" style="max-width:640px;">
+    <h2>Interested in Joining?</h2>
+    <div class="divider center"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <a href="join.html" class="btn btn-burgundy">Join the Club</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Baldons Wine Club" style="height:50px;margin-bottom:0.75rem;opacity:0.85;" onerror="this.style.display='none'">
+  <p><strong>Baldons Wine Club</strong></p>
+  <p>The Seven Stars, Marsh Baldon · Oxfordshire</p>
+  <p><a href="mailto:wine@baldons.co.uk">wine@baldons.co.uk</a></p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="committee.html">Committee</a>
+    <a href="events.html">Events</a>
+    <a href="wines.html">Wine Library</a>
+    <a href="join.html">Join Us</a>
+    <a href="members.html">Members</a>
+  </div>
+  <p style="margin-top:1.25rem;font-size:0.78rem;opacity:0.6;">© 2026 Baldons Wine Club · In Vino Veritas</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Load first 3 events and 3 wines for the home page
+  document.addEventListener('DOMContentLoaded', async () => {
+    const events = await loadSheet('Events') || SAMPLE_EVENTS.slice(0, 3);
+    renderEvents('events-home', events.slice(0, 3));
+    const wines = await loadSheet('Wines') || SAMPLE_WINES.slice(0, 3);
+    renderWines('wines-home', wines.slice(0, 3));
+  });
+</script>
+</body>
+</html>

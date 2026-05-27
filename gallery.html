@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Baldons Wine Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-mark"><img src="images/logo.png" alt="BWC" style="width:68px;height:68px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='🍷'"></div>
+      <div class="brand-text"><strong>Baldons Wine Club</strong><span>In Vino Veritas</span></div>
+    </a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="committee.html">Committee</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="wines.html">Wine Library</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li class="members-link"><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1>Gallery</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Photos from our tastings, events and trips.</p>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- Year filter -->
+    <div style="display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap;">
+      <button class="btn btn-burgundy">All</button>
+      <button class="btn btn-outline" style="color:var(--burgundy);border-color:var(--burgundy);">2026</button>
+      <button class="btn btn-outline" style="color:var(--burgundy);border-color:var(--burgundy);">2025</button>
+      <button class="btn btn-outline" style="color:var(--burgundy);border-color:var(--burgundy);">2024</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Placeholder tiles — replace with <img> tags as photos are added -->
+      <div class="gallery-item">🍷</div>
+      <div class="gallery-item">🥂</div>
+      <div class="gallery-item">🍾</div>
+      <div class="gallery-item">🍷</div>
+      <div class="gallery-item">🌿</div>
+      <div class="gallery-item">🍷</div>
+      <div class="gallery-item">🥂</div>
+      <div class="gallery-item">🍾</div>
+      <div class="gallery-item">🍷</div>
+      <div class="gallery-item">🌿</div>
+      <div class="gallery-item">🍷</div>
+      <div class="gallery-item">🥂</div>
+    </div>
+
+    <div style="background:var(--cream-dark);border:1px dashed var(--border);border-radius:8px;padding:2rem;text-align:center;margin-top:2rem;color:var(--text-light);font-family:Arial,sans-serif;font-size:0.9rem;">
+      <p><strong>Adding photos:</strong> Replace the placeholder tiles above with <code>&lt;img src="images/your-photo.jpg" alt="Description"&gt;</code> wrapped in <code>&lt;div class="gallery-item"&gt;</code> tags. Drop photo files into the <code>images/</code> folder.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Baldons Wine Club" style="height:50px;margin-bottom:0.75rem;opacity:0.85;" onerror="this.style.display='none'">
+  <p><strong>Baldons Wine Club</strong></p>
+  <p>The Seven Stars, Marsh Baldon · Oxfordshire</p>
+  <p><a href="mailto:wine@baldons.co.uk">wine@baldons.co.uk</a></p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="committee.html">Committee</a>
+    <a href="events.html">Events</a><a href="wines.html">Wine Library</a>
+    <a href="join.html">Join Us</a><a href="members.html">Members</a>
+  </div>
+  <p style="margin-top:1.25rem;font-size:0.78rem;opacity:0.6;">© 2026 Baldons Wine Club · In Vino Veritas</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

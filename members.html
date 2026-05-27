@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Area — Baldons Wine Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-mark"><img src="images/logo.png" alt="BWC" style="width:68px;height:68px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='🍷'"></div>
+      <div class="brand-text"><strong>Baldons Wine Club</strong><span>In Vino Veritas</span></div>
+    </a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="committee.html">Committee</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="wines.html">Wine Library</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li class="members-link"><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- ── PASSWORD GATE ── -->
+    <div class="members-gate" id="members-gate">
+      <div class="lock-icon">🔒</div>
+      <h2>Members Area</h2>
+      <p>This section is for Baldons Wine Club members only. Enter the membership password to continue.</p>
+      <form class="password-form" id="password-form">
+        <input type="password" id="members-password" placeholder="Enter password" autocomplete="current-password">
+        <button type="submit" class="btn btn-burgundy">Enter</button>
+        <p class="error" id="password-error">Incorrect password — please try again.</p>
+      </form>
+      <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--text-light);">Don't have the password? <a href="join.html">Join the club</a> or <a href="join.html">contact us</a>.</p>
+    </div>
+
+    <!-- ── MEMBERS CONTENT ── -->
+    <div id="members-content" style="display:none;">
+
+      <div class="page-header" style="margin:-4.5rem -1.5rem 2.5rem;border-radius:0;">
+        <h1>Welcome, Members 🍷</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your exclusive members content is below.</p>
+      </div>
+
+      <!-- Special Deals -->
+      <div class="section-header">
+        <h2>Member Deals &amp; Discounts</h2>
+        <div class="divider center"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="card-grid" style="margin-bottom:3rem;">
+        <div class="card"><div class="card-body">
+          <div class="subtitle">Until 30 Jun 2026</div>
+          <h3>Lorem Ipsum Wines — 15% Off</h3>
+          <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Use code <strong>BALDONS15</strong> at checkout.</p>
+          <a href="#" class="btn btn-burgundy" style="margin-top:0.5rem;font-size:0.82rem;padding:0.5rem 1rem;">Get Deal</a>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="subtitle">Ongoing</div>
+          <h3>Dolor Sit Amet Cellar — Free Delivery</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+          <a href="#" class="btn btn-burgundy" style="margin-top:0.5rem;font-size:0.82rem;padding:0.5rem 1rem;">Get Deal</a>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="subtitle">New</div>
+          <h3>Adipiscing Fine Wines — Case Discount</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni.</p>
+          <a href="#" class="btn btn-burgundy" style="margin-top:0.5rem;font-size:0.82rem;padding:0.5rem 1rem;">Get Deal</a>
+        </div></div>
+      </div>
+
+      <!-- Members Insights -->
+      <div class="section-header">
+        <h2>Members Insights</h2>
+        <div class="divider center"></div>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — exclusive tips, notes and resources.</p>
+      </div>
+      <div class="card-grid" style="margin-bottom:3rem;">
+        <div class="card"><div class="card-body">
+          <div class="subtitle">Jun 2026</div>
+          <h3>Summer Wine Guide 2026</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          <a href="#" class="buy-link">Read →</a>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="subtitle">May 2026</div>
+          <h3>Rosé: How to Choose Well</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          <a href="#" class="buy-link">Read →</a>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="subtitle">Apr 2026</div>
+          <h3>Natural Wine: A Primer</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="#" class="buy-link">Read →</a>
+        </div></div>
+      </div>
+
+      <!-- Meeting minutes / docs -->
+      <div style="background:var(--cream-dark);border:1px solid var(--border);border-radius:8px;padding:2rem;margin-bottom:2rem;">
+        <h3 style="margin-bottom:1rem;">📄 Members Documents</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem;">
+          <li><a href="#" class="buy-link">AGM Minutes — March 2026</a></li>
+          <li><a href="#" class="buy-link">Membership Renewal 2026–27</a></li>
+          <li><a href="#" class="buy-link">Club Constitution (updated 2025)</a></li>
+        </ul>
+      </div>
+
+      <p style="text-align:center;color:var(--text-light);font-size:0.9rem;">
+        <a href="#" onclick="sessionStorage.removeItem('bwc-member-auth');location.reload();" style="color:var(--text-light);">Sign out of members area</a>
+      </p>
+
+    </div><!-- /members-content -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Baldons Wine Club" style="height:50px;margin-bottom:0.75rem;opacity:0.85;" onerror="this.style.display='none'">
+  <p><strong>Baldons Wine Club</strong></p>
+  <p>The Seven Stars, Marsh Baldon · Oxfordshire</p>
+  <p><a href="mailto:wine@baldons.co.uk">wine@baldons.co.uk</a></p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="committee.html">Committee</a>
+    <a href="events.html">Events</a><a href="wines.html">Wine Library</a>
+    <a href="join.html">Join Us</a><a href="members.html">Members</a>
+  </div>
+  <p style="margin-top:1.25rem;font-size:0.78rem;opacity:0.6;">© 2026 Baldons Wine Club · In Vino Veritas</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  initMembersGate();
+});
+</script>
+</body>
+</html>
